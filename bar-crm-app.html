@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Austin Bar CRM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        #header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        #header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        #header .stats {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+        
+        #map {
+            width: 100%;
+            height: 300px;
+            background: #e0e0e0;
+        }
+        
+        #controls {
+            padding: 12px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        #bar-list {
+            padding: 12px;
+        }
+        
+        .bar-card {
+            background: white;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-left: 4px solid #ccc;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .bar-card.visited {
+            border-left-color: #4caf50;
+        }
+        
+        .bar-card.rejected {
+            border-left-color: #f44336;
+            opacity: 0.7;
+        }
+        
+        .bar-card:active {
+            transform: scale(0.98);
+        }
+        
+        .bar-card h3 {
+            font-size: 16px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        
+        .bar-card .address {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        
+        .bar-card .meta {
+            display: flex;
+            gap: 12px;
+            font-size: 12px;
+            color: #999;
+        }
+        
+        .bar-card .outcome-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        
+        .outcome-badge.yes {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        
+        .outcome-badge.no {
+            background: #ffebee;
+            color: #c62828;
+        }
+        
+        .bar-card .last-contact {
+            font-size: 12px;
+            color: #667eea;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+        
+        /* Modal */
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        #modal.show {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .modal-header h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        .modal-header .address {
+            font-size: 13px;
+            color: #666;
+        }
+        
+        .modal-body {
+            padding: 20px;
+        }
+        
+        .outcome-buttons {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .outcome-btn {
+            flex: 1;
+            padding: 16px;
+            border: 2px solid #e0e0e0;
+            background: white;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .outcome-btn.yes {
+            border-color: #4caf50;
+            color: #4caf50;
+        }
+        
+        .outcome-btn.yes.active {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .outcome-btn.no {
+            border-color: #f44336;
+            color: #f44336;
+        }
+        
+        .outcome-btn.no.active {
+            background: #f44336;
+            color: white;
+        }
+        
+        .form-group {
+            margin-bottom: 16px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .modal-footer {
+            padding: 20px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 12px;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-cancel {
+            background: #f5f5f5;
+            color: #666;
+        }
+        
+        .btn-save {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn:active {
+            transform: scale(0.97);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #999;
+        }
+        
+        .empty-state h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        
+        @media (max-width: 480px) {
+            #modal {
+                padding: 0;
+            }
+            
+            .modal-content {
+                border-radius: 0;
+                max-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>🍸 Austin Bar CRM</h1>
+        <div class="stats">
+            <span id="total-bars">0</span> bars · 
+            <span id="visited-count">0</span> visited · 
+            <span id="interested-count">0</span> interested
+        </div>
+    </div>
+    
+    <div id="map"></div>
+    
+    <div id="controls">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="interested">✅ Interested</button>
+        <button class="filter-btn" data-filter="not-interested">❌ Not Interested</button>
+        <button class="filter-btn" data-filter="pending">⏳ Pending</button>
+    </div>
+    
+    <div id="bar-list"></div>
+    
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-bar-name"></h2>
+                <div class="address" id="modal-bar-address"></div>
+            </div>
+            <div class="modal-body">
+                <div class="outcome-buttons">
+                    <button class="outcome-btn yes" data-outcome="yes">✅ Interested</button>
+                    <button class="outcome-btn no" data-outcome="no">❌ Not Interested</button>
+                </div>
+                
+                <div class="form-group">
+                    <label>Date Visited</label>
+                    <input type="date" id="date-visited">
+                </div>
+                
+                <div class="form-group">
+                    <label>Contact Name</label>
+                    <input type="text" id="contact-name" placeholder="e.g., Banner">
+                </div>
+                
+                <div class="form-group">
+                    <label>Role/Title</label>
+                    <input type="text" id="contact-role" placeholder="e.g., Manager">
+                </div>
+                
+                <div class="form-group">
+                    <label>Outcome Notes</label>
+                    <textarea id="outcome-notes" placeholder="What happened? Any key details..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Next Action</label>
+                    <input type="text" id="next-action" placeholder="e.g., Email details to owner">
+                </div>
+                
+                <div class="form-group">
+                    <label>Full Notes</label>
+                    <textarea id="full-notes" placeholder="Any additional context..."></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-save" onclick="saveBar()">Save</button>
+            </div>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let bars = [];
+        let currentBar = null;
+        let currentFilter = 'all';
+        let map = null;
+        let markers = [];
+        
+        // Load data
+        async function loadData() {
+            try {
+                const response = await fetch('bar-crm-data.json');
+                bars = await response.json();
+                initMap();
+                renderList();
+                updateStats();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                bars = [];
+                renderList();
+            }
+        }
+        
+        // Initialize Leaflet Map (OpenStreetMap - free, no API key needed)
+        function initMap() {
+            if (!map) {
+                map = L.map('map').setView([30.2672, -97.7431], 13);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '© OpenStreetMap'
+                }).addTo(map);
+            }
+            
+            // Clear existing markers
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+            
+            // Add markers
+            bars.forEach((bar, index) => {
+                const color = bar.crm?.quickOutcome === 'yes' ? '#4caf50' : 
+                             bar.crm?.quickOutcome === 'no' ? '#f44336' : '#667eea';
+                
+                const icon = L.divIcon({
+                    className: 'custom-marker',
+                    html: `<div style="background-color: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>`,
+                    iconSize: [16, 16],
+                    iconAnchor: [8, 8]
+                });
+                
+                const marker = L.marker([bar.latitude, bar.longitude], { icon })
+                    .addTo(map)
+                    .on('click', () => openModal(bar));
+                
+                markers.push(marker);
+            });
+        }
+        
+        // Render bar list
+        function renderList() {
+            const listEl = document.getElementById('bar-list');
+            let filteredBars = bars;
+            
+            if (currentFilter === 'interested') {
+                filteredBars = bars.filter(b => b.crm?.quickOutcome === 'yes');
+            } else if (currentFilter === 'not-interested') {
+                filteredBars = bars.filter(b => b.crm?.quickOutcome === 'no');
+            } else if (currentFilter === 'pending') {
+                filteredBars = bars.filter(b => !b.crm?.quickOutcome);
+            }
+            
+            if (filteredBars.length === 0) {
+                listEl.innerHTML = `
+                    <div class="empty-state">
+                        <h3>No bars found</h3>
+                        <p>Try changing the filter</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            listEl.innerHTML = filteredBars.map(bar => {
+                const crm = bar.crm || {};
+                const outcomeClass = crm.quickOutcome === 'yes' ? 'visited' : 
+                                    crm.quickOutcome === 'no' ? 'rejected' : '';
+                
+                return `
+                    <div class="bar-card ${outcomeClass}" onclick="openModal(${bars.indexOf(bar)})">
+                        <h3>${bar.name}</h3>
+                        <div class="address">${bar.address}</div>
+                        <div class="meta">
+                            ${bar.rating ? `⭐ ${bar.rating}` : ''}
+                            ${bar.reviews ? `· ${bar.reviews.toLocaleString()} reviews` : ''}
+                            ${bar.distance ? `· ${bar.distance} mi` : ''}
+                        </div>
+                        ${crm.quickOutcome ? `
+                            <span class="outcome-badge ${crm.quickOutcome}">
+                                ${crm.quickOutcome === 'yes' ? '✅ Interested' : '❌ Not Interested'}
+                            </span>
+                        ` : ''}
+                        ${crm.contactName ? `
+                            <div class="last-contact">
+                                Last contact: ${crm.contactName}${crm.dateVisited ? ` on ${new Date(crm.dateVisited).toLocaleDateString()}` : ''}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Open modal
+        function openModal(barIndexOrObject) {
+            const bar = typeof barIndexOrObject === 'number' ? bars[barIndexOrObject] : barIndexOrObject;
+            currentBar = bar;
+            
+            document.getElementById('modal-bar-name').textContent = bar.name;
+            document.getElementById('modal-bar-address').textContent = bar.address;
+            
+            const crm = bar.crm || {};
+            document.getElementById('date-visited').value = crm.dateVisited || '';
+            document.getElementById('contact-name').value = crm.contactName || '';
+            document.getElementById('contact-role').value = crm.contactRole || '';
+            document.getElementById('outcome-notes').value = crm.outcomeNotes || '';
+            document.getElementById('next-action').value = crm.nextAction || '';
+            document.getElementById('full-notes').value = crm.fullNotes || '';
+            
+            // Set outcome buttons
+            document.querySelectorAll('.outcome-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.outcome === crm.quickOutcome) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            document.getElementById('modal').classList.add('show');
+        }
+        
+        // Close modal
+        function closeModal() {
+            document.getElementById('modal').classList.remove('show');
+            currentBar = null;
+        }
+        
+        // Save bar data
+        function saveBar() {
+            if (!currentBar) return;
+            
+            const outcome = document.querySelector('.outcome-btn.active')?.dataset.outcome || null;
+            
+            currentBar.crm = {
+                quickOutcome: outcome,
+                dateVisited: document.getElementById('date-visited').value,
+                contactName: document.getElementById('contact-name').value,
+                contactRole: document.getElementById('contact-role').value,
+                outcomeNotes: document.getElementById('outcome-notes').value,
+                nextAction: document.getElementById('next-action').value,
+                fullNotes: document.getElementById('full-notes').value,
+                lastUpdated: new Date().toISOString()
+            };
+            
+            // Save to localStorage (in real version, this would be saved to server)
+            localStorage.setItem('bar-crm-data', JSON.stringify(bars));
+            
+            closeModal();
+            renderList();
+            updateStats();
+            initMap(); // Refresh map markers
+        }
+        
+        // Update stats
+        function updateStats() {
+            document.getElementById('total-bars').textContent = bars.length;
+            document.getElementById('visited-count').textContent = bars.filter(b => b.crm?.dateVisited).length;
+            document.getElementById('interested-count').textContent = bars.filter(b => b.crm?.quickOutcome === 'yes').length;
+        }
+        
+        // Filter buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.filter;
+                renderList();
+            });
+        });
+        
+        // Outcome button clicks
+        document.querySelectorAll('.outcome-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.outcome-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+        
+        // Close modal on background click
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
+        });
+        
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
