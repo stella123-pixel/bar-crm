@@ -966,7 +966,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             let filteredBars = bars;
             
             if (currentFilter === 'visited') {
-                filteredBars = bars.filter(b => b.crm?.quickOutcome === 'yes' || b.crm?.quickOutcome === 'lead');
+                filteredBars = bars.filter(b => b.crm?.quickOutcome === 'yes' || b.crm?.quickOutcome === 'lead' || b.crm?.quickOutcome === 'no');
             } else if (currentFilter === 'lead-secured') {
                 filteredBars = bars.filter(b => b.crm?.quickOutcome === 'lead');
             } else if (currentFilter === 'not-interested') {
