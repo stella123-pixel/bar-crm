@@ -1049,7 +1049,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             const agendaEl = document.getElementById('agenda-list');
             
             const followUps = bars.filter(b => 
-                b.crm && (b.crm.waitingOn || b.crm.deadline || b.crm.nextAction)
+                b.crm && (b.crm.waitingOn || b.crm.deadline || b.crm.nextAction) && b.crm.quickOutcome !== 'no'
             ).sort((a, b) => {
                 if (!a.crm.deadline && !b.crm.deadline) return 0;
                 if (!a.crm.deadline) return 1;
