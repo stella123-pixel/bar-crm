@@ -1097,10 +1097,19 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                     deadlineHtml = `<div class="deadline">⏰ Deadline: ${deadlineText}</div>`;
                 }
                 
+                // Add priority badge
+                let priorityBadge = '';
+                if (crm.quickOutcome === 'lead') {
+                    priorityBadge = '<span class="outcome-badge lead">💰 LEAD - Action Needed</span>';
+                } else {
+                    priorityBadge = '<span class="outcome-badge" style="background: #e3f2fd; color: #1976d2;">🔄 Return Visit</span>';
+                }
+                
                 return `
                     <div class="bar-card ${cardClass}" onclick='openModal(${JSON.stringify(bar).replace(/'/g, "&apos;")})'>
                         <h3>${leadIcon}${bar.name}</h3>
                         <div class="address">${bar.address || 'No address'}</div>
+                        ${priorityBadge}
                         ${deadlineHtml}
                         ${waitingOnHtml}
                         ${crm.nextAction ? `<div class="last-contact">Next: ${crm.nextAction}</div>` : ''}
