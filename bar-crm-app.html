@@ -886,7 +886,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 
                 if (bar.crm?.quickOutcome === 'lead') {
                     color = '#ffd700';
-                    iconHtml = '<div style="font-size: 14px; line-height: 16px;">💰</div>';
+                    iconHtml = '<div style="font-size: 22px; line-height: 24px;">💰</div>';
                 } else if (bar.crm?.quickOutcome === 'yes') {
                     color = '#4caf50';
                     iconHtml = '<div style="background-color: ' + color + '; width: 16px; height: 16px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>';
@@ -897,11 +897,14 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                     iconHtml = '<div style="background-color: ' + color + '; width: 16px; height: 16px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);"></div>';
                 }
                 
+                const iconSize = bar.crm?.quickOutcome === 'lead' ? [24, 24] : [16, 16];
+                const iconAnchor = bar.crm?.quickOutcome === 'lead' ? [12, 12] : [8, 8];
+                
                 const icon = L.divIcon({
                     className: 'custom-marker',
                     html: iconHtml,
-                    iconSize: [16, 16],
-                    iconAnchor: [8, 8]
+                    iconSize: iconSize,
+                    iconAnchor: iconAnchor
                 });
                 
                 const marker = L.marker([bar.latitude, bar.longitude], { icon })
@@ -918,7 +921,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             let filteredBars = bars;
             
             if (currentFilter === 'visited') {
-                filteredBars = bars.filter(b => b.crm?.quickOutcome === 'yes');
+                filteredBars = bars.filter(b => b.crm?.quickOutcome === 'yes' || b.crm?.quickOutcome === 'lead');
             } else if (currentFilter === 'lead-secured') {
                 filteredBars = bars.filter(b => b.crm?.quickOutcome === 'lead');
             } else if (currentFilter === 'not-interested') {
