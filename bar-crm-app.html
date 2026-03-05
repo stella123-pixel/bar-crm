@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Austin Bar CRM</title>
+    <title>Austin Bar CRM (Firebase)</title>
     <style>
         * {
             margin: 0;
@@ -274,7 +274,6 @@
             color: #1976d2;
         }
         
-        /* Resources Tab */
         #resources-content {
             padding: 16px;
         }
@@ -340,16 +339,6 @@
             opacity: 1;
         }
         
-        .image-upload-area {
-            border: 2px dashed #e0e0e0;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            color: #999;
-            font-size: 14px;
-        }
-        
-        /* Modal */
         #modal {
             display: none;
             position: fixed;
@@ -545,6 +534,13 @@
             background: #45a049;
         }
         
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 14px;
+        }
+        
         @media (max-width: 480px) {
             #modal {
                 padding: 0;
@@ -596,7 +592,7 @@
         
         <button class="add-bar-btn" onclick="addNewBar()">➕ Add Bar Manually</button>
         
-        <div id="bar-list"></div>
+        <div id="bar-list"><div class="loading">Loading bars...</div></div>
     </div>
     
     <div id="tab-agenda" class="tab-content">
@@ -652,7 +648,7 @@
                 
                 <div class="form-group">
                     <label>Contact Name</label>
-                    <input type="text" id="contact-name" placeholder="e.g., Banner">
+                    <input type="text" id="contact-name" placeholder="e.g., Sarah">
                 </div>
                 
                 <div class="form-group">
@@ -698,6 +694,36 @@
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
+        import { getFirestore, collection, getDocs, doc, setDoc, onSnapshot } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js';
+        
+        // Firebase config
+        const firebaseConfig = {
+            apiKey: "AIzaSyDc9F4ngtioNzmWcbOH2noyj7M_vDSJXrE",
+            authDomain: "bar-crm-5611b.firebaseapp.com",
+            projectId: "bar-crm-5611b",
+            storageBucket: "bar-crm-5611b.firebasestorage.app",
+            messagingSenderId: "946036605904",
+            appId: "1:946036605904:web:71bb2d7e4defcb979f6fd5"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        
+        // Make Firestore available globally
+        window.db = db;
+        window.firestoreModules = { collection, getDocs, doc, setDoc, onSnapshot };
+        
+        // Load initial data
+        window.addEventListener('DOMContentLoaded', () => {
+            loadData();
+        });
+    </script>
+    
     <script>
         let bars = [];
         let currentBar = null;
@@ -705,27 +731,58 @@
         let currentTab = 'map';
         let map = null;
         let markers = [];
+        let unsubscribe = null;
         
-        // Load data
+        // Load data from Firestore
         async function loadData() {
             try {
-                const response = await fetch('bar-crm-data.json');
-                bars = await response.json();
+                const { collection, getDocs, onSnapshot } = window.firestoreModules;
+                const barsCol = collection(window.db, 'bars');
                 
-                // Load any manually added bars from localStorage
-                const manualBars = JSON.parse(localStorage.getItem('manual-bars') || '[]');
-                bars = [...bars, ...manualBars];
+                // Real-time listener
+                unsubscribe = onSnapshot(barsCol, (snapshot) => {
+                    bars = [];
+                    snapshot.forEach((doc) => {
+                        bars.push({ id: doc.id, ...doc.data() });
+                    });
+                    
+                    initMap();
+                    renderList();
+                    renderAgenda();
+                    updateStats();
+                });
                 
-                initMap();
-                renderList();
-                renderAgenda();
-                updateStats();
+                // Load resources
                 loadResources();
+                
             } catch (error) {
                 console.error('Error loading data:', error);
-                bars = [];
-                renderList();
-                renderAgenda();
+                document.getElementById('bar-list').innerHTML = `
+                    <div class="empty-state">
+                        <h3>Error loading data</h3>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Save bar to Firestore
+        async function saveBarToFirestore(bar) {
+            try {
+                const { doc, setDoc } = window.firestoreModules;
+                const barId = bar.id || `bar_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+                const barRef = doc(window.db, 'bars', barId);
+                
+                await setDoc(barRef, {
+                    ...bar,
+                    id: barId,
+                    lastUpdated: new Date().toISOString()
+                }, { merge: true });
+                
+                console.log('Bar saved to Firestore:', barId);
+            } catch (error) {
+                console.error('Error saving to Firestore:', error);
+                alert('Error saving data: ' + error.message);
             }
         }
         
@@ -737,7 +794,6 @@
             if (savedScript) {
                 document.getElementById('pitch-script-text').value = savedScript;
             } else {
-                // Default script
                 document.getElementById('pitch-script-text').value = `Hi! I'm Stella, I'm building custom fragrance vending machines for bars.
 
 I noticed you have a great crowd here – would you be open to trying a free unit for 60 days?
@@ -799,7 +855,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 searchResults.innerHTML = '<div class="search-result-item">No bars found</div>';
             } else {
                 searchResults.innerHTML = matches.map(bar => `
-                    <div class="search-result-item" onclick="selectBar(${bars.indexOf(bar)})">
+                    <div class="search-result-item" onclick="selectBar('${bar.id}')">
                         <strong>${bar.name}</strong>
                         <small>${bar.address || 'No address'}</small>
                     </div>
@@ -809,22 +865,21 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             searchResults.style.display = 'block';
         });
         
-        // Close search results when clicking outside
         document.addEventListener('click', (e) => {
             if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
                 searchResults.style.display = 'none';
             }
         });
         
-        // Select bar from search
-        function selectBar(index) {
+        function selectBar(barId) {
             searchResults.style.display = 'none';
             searchInput.value = '';
-            openModal(bars[index]);
+            const bar = bars.find(b => b.id === barId);
+            if (bar) openModal(bar);
         }
         
         // Add new bar manually
-        function addNewBar() {
+        async function addNewBar() {
             const barName = prompt('Bar name:');
             if (!barName) return;
             
@@ -833,23 +888,15 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             const newBar = {
                 name: barName,
                 address: barAddress,
-                latitude: 30.2672, // Default to downtown
+                latitude: 30.2672,
                 longitude: -97.7431,
                 type: 'Bar',
                 distance: null,
                 manual: true
             };
             
-            bars.push(newBar);
-            
-            // Save to localStorage
-            const manualBars = JSON.parse(localStorage.getItem('manual-bars') || '[]');
-            manualBars.push(newBar);
-            localStorage.setItem('manual-bars', JSON.stringify(manualBars));
-            
-            renderList();
-            updateStats();
-            alert('Bar added! You can now track it in your CRM.');
+            await saveBarToFirestore(newBar);
+            alert('Bar added! Syncing to Firebase...');
         }
         
         // Switch tabs
@@ -865,7 +912,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             }
         }
         
-        // Initialize Leaflet Map
+        // Initialize map
         function initMap() {
             if (!map) {
                 map = L.map('map').setView([30.2672, -97.7431], 14);
@@ -875,12 +922,10 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 }).addTo(map);
             }
             
-            // Clear existing markers
             markers.forEach(m => map.removeLayer(m));
             markers = [];
             
-            // Add markers
-            bars.forEach((bar, index) => {
+            bars.forEach((bar) => {
                 let color = '#667eea';
                 let iconHtml = '';
                 
@@ -915,7 +960,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             });
         }
         
-        // Render bar list
+        // Render list
         function renderList() {
             const listEl = document.getElementById('bar-list');
             let filteredBars = bars;
@@ -934,7 +979,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 listEl.innerHTML = `
                     <div class="empty-state">
                         <h3>No bars found</h3>
-                        <p>Try changing the filter</p>
+                        <p>Try changing the filter or add bars manually</p>
                     </div>
                 `;
                 return;
@@ -978,7 +1023,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 }
                 
                 return `
-                    <div class="bar-card ${cardClass}" onclick="openModal(${bars.indexOf(bar)})">
+                    <div class="bar-card ${cardClass}" onclick='openModal(${JSON.stringify(bar).replace(/'/g, "&apos;")})'>
                         <h3>${leadIcon}${bar.name}</h3>
                         <div class="address">${bar.address || 'No address'}</div>
                         <div class="meta">
@@ -999,7 +1044,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             }).join('');
         }
         
-        // Render agenda tab
+        // Render agenda
         function renderAgenda() {
             const agendaEl = document.getElementById('agenda-list');
             
@@ -1053,7 +1098,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 }
                 
                 return `
-                    <div class="bar-card ${cardClass}" onclick="openModal(${bars.indexOf(bar)})">
+                    <div class="bar-card ${cardClass}" onclick='openModal(${JSON.stringify(bar).replace(/'/g, "&apos;")})'>
                         <h3>${leadIcon}${bar.name}</h3>
                         <div class="address">${bar.address || 'No address'}</div>
                         ${deadlineHtml}
@@ -1065,8 +1110,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
         }
         
         // Open modal
-        function openModal(barIndexOrObject) {
-            const bar = typeof barIndexOrObject === 'number' ? bars[barIndexOrObject] : barIndexOrObject;
+        function openModal(bar) {
             currentBar = bar;
             
             document.getElementById('modal-bar-name').textContent = bar.name;
@@ -1098,8 +1142,8 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             currentBar = null;
         }
         
-        // Save bar data
-        function saveBar() {
+        // Save bar
+        async function saveBar() {
             if (!currentBar) return;
             
             const outcome = document.querySelector('.outcome-btn.active')?.dataset.outcome || null;
@@ -1117,13 +1161,8 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 lastUpdated: new Date().toISOString()
             };
             
-            localStorage.setItem('bar-crm-data', JSON.stringify(bars));
-            
+            await saveBarToFirestore(currentBar);
             closeModal();
-            renderList();
-            renderAgenda();
-            updateStats();
-            initMap();
         }
         
         // Update stats
@@ -1143,7 +1182,7 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
             });
         });
         
-        // Outcome button clicks
+        // Outcome buttons
         document.querySelectorAll('.outcome-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.outcome-btn').forEach(b => b.classList.remove('active'));
@@ -1157,9 +1196,6 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
                 closeModal();
             }
         });
-        
-        // Load data on page load
-        loadData();
     </script>
 </body>
 </html>
