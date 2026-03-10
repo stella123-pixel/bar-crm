@@ -11,7 +11,7 @@
     "placeId": "ChIJWdi3AAm1RIYRVOzVjpc3hOQ",
     "phone": "(512) 369-3490",
     "website": "http://www.garagetx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Belmont",
@@ -39,7 +39,7 @@
     "placeId": "ChIJKXF6xXO1RIYRm1Mk86PvJak",
     "phone": "(512) 878-9233",
     "website": "http://thepubatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Lavaca Street Bar",
@@ -53,7 +53,7 @@
     "placeId": "ChIJbVP_3wi1RIYR17jn9Oqcj6w",
     "phone": "(512) 469-0106",
     "website": "http://www.lavacastreet.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Roosevelt Room",
@@ -67,7 +67,7 @@
     "placeId": "ChIJIeohJQm1RIYRG-NyRBlsnuw",
     "phone": "(512) 494-4094",
     "website": "http://www.therooseveltroomatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Tiger Lilly",
@@ -95,7 +95,7 @@
     "placeId": "ChIJ77Ft_s21RIYRfbiAvSW26iA",
     "phone": "(512) 291-3231",
     "website": "http://dumontsaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Secret Society",
@@ -123,7 +123,7 @@
     "placeId": "ChIJUamqTQi1RIYRBTp6RAHO_kU",
     "phone": "(512) 448-4600",
     "website": "http://www.shinerssaloon.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Driftwood Downtown",
@@ -137,7 +137,7 @@
     "placeId": "ChIJ404U66S1RIYRgapAPlRGAh4",
     "phone": "(737) 241-3509",
     "website": "https://www.driftwoodgolfclub.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Speakeasy",
@@ -151,7 +151,7 @@
     "placeId": "ChIJ2VVCTgi1RIYRdZUyhqoZk_s",
     "phone": "(512) 477-2789",
     "website": "http://www.speakeasyaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Mort Subite European Bar",
@@ -165,7 +165,7 @@
     "placeId": "ChIJi0ZEZwi1RIYRSpGdWA3gZiI",
     "phone": null,
     "website": "https://belgianbaraustin.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Upstairs at Caroline",
@@ -179,7 +179,7 @@
     "placeId": "ChIJQyfp5wm1RIYRuYHlan7PCQs",
     "phone": "(512) 982-6766",
     "website": "https://www.carolinerestaurant.com/upstairs-at-caroline?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Elephant Room",
@@ -193,7 +193,7 @@
     "placeId": "ChIJa59yaAi1RIYRyTOii08uLtQ",
     "phone": "(512) 575-2925",
     "website": "http://www.elephantroom.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Devil May Care",
@@ -207,10 +207,10 @@
     "placeId": "ChIJW02GaiG1RIYR8ZZKBuZOWQg",
     "phone": "(512) 767-6052",
     "website": "http://devilmaycareatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
-    "name": "Stephen F\u2019s Bar & Terrace",
+    "name": "Stephen F’s Bar & Terrace",
     "address": "701 Congress Ave., Austin, TX 78701",
     "latitude": 30.2690712,
     "longitude": -97.7421092,
@@ -221,7 +221,7 @@
     "placeId": "ChIJmdBK4Qm1RIYR0yIt8EmGumE",
     "phone": "(512) 457-8800",
     "website": "https://www.sonesta.com/royal-sonesta/tx/austin/stephen-f-austin-royal-sonesta-hotel/bar",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The Driskill Bar",
@@ -235,7 +235,7 @@
     "placeId": "ChIJ44YMYae1RIYR2BeEz44Rm8A",
     "phone": "(512) 391-7107",
     "website": "https://driskillhotel.com/dining/the-driskill-bar/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Unbarlievable West 6th",
@@ -249,7 +249,7 @@
     "placeId": "ChIJsyC4O0y1RIYR2ew8hrUk02A",
     "phone": "(512) 774-4311",
     "website": "https://www.unbarlievable.com/",
-    "hours": "Closed \u00b7 Opens 8\u202fPM Thu"
+    "hours": "Closed · Opens 8 PM Thu"
   },
   {
     "name": "El Cockfight",
@@ -263,7 +263,7 @@
     "placeId": "ChIJLchdIAa1RIYRanZQqdMFgCw",
     "phone": "(512) 643-3240",
     "website": "http://www.bearhughospitality.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Small Victory",
@@ -277,7 +277,7 @@
     "placeId": "ChIJKakp4Am1RIYRB-4OSSKKrPo",
     "phone": "(512) 903-9450",
     "website": "http://smallvictory.bar/",
-    "hours": "Open \u00b7 Closes 1\u202fAM"
+    "hours": "Open · Closes 1 AM"
   },
   {
     "name": "Little Woodrow's West 6th",
@@ -291,19 +291,7 @@
     "placeId": "ChIJHa8koQ61RIYRDD-niQj3Y3w",
     "phone": "(512) 477-2337",
     "website": "https://littlewoodrows.com/locations/west-6th/",
-    "hours": "Open \u00b7 Closes 2\u202fAM",
-    "crm": {
-      "quickOutcome": "lead",
-      "dateVisited": "2026-03-03",
-      "contactName": "Banner",
-      "contactRole": "Manager",
-      "waitingOn": "me",
-      "deadline": "2026-03-12",
-      "outcomeNotes": "Interested in concept, needs to run it by his boss for approval",
-      "nextAction": "Emailed details today (March 4), will call Wednesday March 12",
-      "fullNotes": "Manager Banner was receptive to the idea. Needs boss approval. Sent email with full details for him to forward. Plan to follow up with phone call next Wednesday.",
-      "lastUpdated": "2026-03-04T21:12:00Z"
-    }
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Here Nor There",
@@ -317,7 +305,7 @@
     "placeId": "ChIJ-9CdjMG1RIYR-URHjwOeggk",
     "phone": "(512) 949-7995",
     "website": "http://hntaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "In Plain Sight",
@@ -331,7 +319,7 @@
     "placeId": "ChIJCUZ6aWm1RIYRpbGQFPkKBK0",
     "phone": null,
     "website": "http://inplainsightatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Retail Therapy Cocktail Lounge",
@@ -345,7 +333,7 @@
     "placeId": "ChIJHWcFHDW1RIYRjVTecyOKqWw",
     "phone": "(512) 557-7216",
     "website": "https://www.retailtherapyatx.com/",
-    "hours": "Open \u00b7 Closes 1\u202fAM"
+    "hours": "Open · Closes 1 AM"
   },
   {
     "name": "Eureka!",
@@ -359,7 +347,7 @@
     "placeId": "ChIJF9Jpeqe1RIYRqEgyqpTpZ1c",
     "phone": "(512) 735-1144",
     "website": "http://eurekarestaurantgroup.com/blog/locations/austin/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The Dead Rabbit, Austin",
@@ -373,7 +361,7 @@
     "placeId": "ChIJW3sENn-1RIYRGjtbjA74zn0",
     "phone": "(737) 530-8830",
     "website": "http://www.thedeadrabbittx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Firehouse Lounge",
@@ -387,7 +375,7 @@
     "placeId": "ChIJ7XFDZae1RIYROB6oLNdB2Bk",
     "phone": "(512) 201-2522",
     "website": "https://www.firehousehostel.com/lounge",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "La Condesa",
@@ -401,7 +389,7 @@
     "placeId": "ChIJj9nrSA-1RIYRybO2K0NxQUo",
     "phone": "(512) 499-0300",
     "website": "https://lacondesa.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Friends Bar",
@@ -415,7 +403,7 @@
     "placeId": "ChIJiwdYeae1RIYRQmltbCQ80Mc",
     "phone": "(512) 320-8193",
     "website": "http://www.friendsbar.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Blindside Lounge",
@@ -429,7 +417,7 @@
     "placeId": "ChIJ_Z_hkRy1RIYRu632r3k5-qo",
     "phone": "(512) 996-4166",
     "website": "http://www.blindsidelounge.com/",
-    "hours": "Closed \u00b7 Opens 9\u202fPM Fri"
+    "hours": "Closed · Opens 9 PM Fri"
   },
   {
     "name": "Parlor & Yard",
@@ -443,7 +431,7 @@
     "placeId": "ChIJF7K2ng61RIYRE_PAGQ56OcM",
     "phone": "(512) 777-1156",
     "website": "http://www.parloryard.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Higbie's",
@@ -457,7 +445,7 @@
     "placeId": "ChIJucjUDM21RIYRFveG8j2JOlA",
     "phone": "(512) 500-4060",
     "website": "http://higbies.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Star Bar",
@@ -471,7 +459,7 @@
     "placeId": "ChIJQX0zIAy1RIYRETIq4N928nI",
     "phone": "(512) 477-8550",
     "website": "https://starbartexas.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Corner Restaurant",
@@ -485,7 +473,7 @@
     "placeId": "ChIJxcCceAi1RIYR9AqXT8eWDyc",
     "phone": "(512) 608-4488",
     "website": "https://www.cornerrestaurantaustin.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Eden Cocktail Room",
@@ -499,7 +487,7 @@
     "placeId": "ChIJ77eUOrK1RIYR8yEVbMkAo2w",
     "phone": "(512) 853-0591",
     "website": "http://www.edencocktailroom.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Gnar Bar",
@@ -513,7 +501,7 @@
     "placeId": "ChIJeycfXda1RIYRmiRkyZ_wiVs",
     "phone": "(512) 649-9693",
     "website": "http://www.gnarbaratx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Edge Rooftop",
@@ -527,7 +515,7 @@
     "placeId": "ChIJIxradQi1RIYRjCgHBG2nRF8",
     "phone": "(512) 608-4503",
     "website": "https://www.edgerooftop.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Wiggle Room",
@@ -541,7 +529,7 @@
     "placeId": "ChIJD7mlaqi1RIYR4eM0TKslOZU",
     "phone": "(512) 243-6468",
     "website": "https://wiggleroomatx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Beez Kneez",
@@ -555,7 +543,7 @@
     "placeId": "ChIJD3SQTea1RIYRihbRrP2svwo",
     "phone": null,
     "website": "https://www.instagram.com/beezkneezaustin/?hl=en",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Darwin's Piano Bar",
@@ -569,7 +557,7 @@
     "placeId": "ChIJ2eEknKe1RIYRK0ODp-DCCNg",
     "phone": "(512) 474-7399",
     "website": "http://www.darwinspubaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Rustic Tap",
@@ -583,7 +571,7 @@
     "placeId": "ChIJFQYtgw61RIYRyCHWD7xpm4A",
     "phone": null,
     "website": "https://rustictapaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Ellis",
@@ -597,7 +585,7 @@
     "placeId": "ChIJ2T178CS1RIYRlMNn-0R1seA",
     "phone": "(512) 465-2107",
     "website": "https://www.faregroundaustin.com/ellis?utm_source=google&utm_medium=Yext",
-    "hours": "Closes soon \u00b7 9\u202fPM \u00b7 Opens 11\u202fAM Thu"
+    "hours": "Closes soon · 9 PM · Opens 11 AM Thu"
   },
   {
     "name": "Golden Ace Austin",
@@ -611,7 +599,7 @@
     "placeId": "ChIJHdez34m1RIYRrIK9r0JOj7c",
     "phone": "(512) 518-0808",
     "website": "https://www.goldenaceatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "San Jac Saloon",
@@ -625,7 +613,7 @@
     "placeId": "ChIJUa75Cqe1RIYR7k44LQvushI",
     "phone": "(512) 580-9136",
     "website": "http://www.sanjacsaloon.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Key Bar",
@@ -639,7 +627,7 @@
     "placeId": "ChIJZ4ToKQy1RIYRfYEr57bNgOM",
     "phone": "(512) 877-6600",
     "website": "http://www.keybaraustin.com/",
-    "hours": "Closed \u00b7 Opens 6\u202fPM Thu"
+    "hours": "Closed · Opens 6 PM Thu"
   },
   {
     "name": "Azul Rooftop",
@@ -653,7 +641,7 @@
     "placeId": "ChIJVf7pl6e1RIYREEeVcaNdILo",
     "phone": "(512) 792-5647",
     "website": "https://www.azulrooftopatx.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Saturn",
@@ -667,7 +655,7 @@
     "placeId": "ChIJ_bg8XUm1RIYRw7zmef1fwNw",
     "phone": "(615) 260-5148",
     "website": "https://www.saturnatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Dirty Bill's",
@@ -681,7 +669,7 @@
     "placeId": "ChIJ3d9Jgg61RIYRxOQ01JwLLEs",
     "phone": null,
     "website": "http://www.dirtybillsaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Bull's Irish Pub",
@@ -695,7 +683,7 @@
     "placeId": "ChIJ93UN-Za1RIYRn6Y7Ix0cbbQ",
     "phone": "(512) 291-2748",
     "website": "http://bullsirishpub.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Dizzy Rooster",
@@ -709,7 +697,7 @@
     "placeId": "ChIJ4_6NCae1RIYRy0E1rOvE0g0",
     "phone": "(512) 547-4161",
     "website": "http://thedizzyrooster.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Wild Greg's Saloon Austin",
@@ -723,7 +711,7 @@
     "placeId": "ChIJw8r596e1RIYRewXTIFgKcxQ",
     "phone": "(512) 433-6201",
     "website": "http://wildgregssaloon.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "TIKI 311",
@@ -737,7 +725,7 @@
     "placeId": "ChIJUbLS2We1RIYRbufnwzLZZcI",
     "phone": "(512) 825-6868",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Midnight Cowboy",
@@ -751,7 +739,7 @@
     "placeId": "ChIJT_Gwpqe1RIYRIZAT_hZguaQ",
     "phone": null,
     "website": "https://midnightcowboymodeling.com/",
-    "hours": "Open \u00b7 Closes 11:45\u202fPM"
+    "hours": "Open · Closes 11:45 PM"
   },
   {
     "name": "Space Fox Bar",
@@ -765,7 +753,7 @@
     "placeId": "ChIJAw7OKgy1RIYRUCMSXkqrI_I",
     "phone": "(512) 520-5066",
     "website": "https://www.wtficehouse.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Buck Wild",
@@ -779,7 +767,7 @@
     "placeId": "ChIJrWSWChu1RIYRtcm1NoWqWOk",
     "phone": "(512) 825-6868",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Betty",
@@ -793,7 +781,7 @@
     "placeId": "ChIJi54OkcO1RIYRThtyJXXgFPk",
     "phone": null,
     "website": "http://thebettyatx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Blind Pig Pub",
@@ -807,7 +795,7 @@
     "placeId": "ChIJ36RepKe1RIYRaRHAMH0sZIo",
     "phone": "(512) 369-3358",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Maggie Mae's",
@@ -821,7 +809,7 @@
     "placeId": "ChIJ9RVwpae1RIYR8NgyVAonPCQ",
     "phone": "(512) 478-8541",
     "website": "http://www.maggiemaesaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Shakespeare's",
@@ -835,7 +823,7 @@
     "placeId": "ChIJDc2vp6e1RIYRD0Z4L8b_Uj8",
     "phone": "(512) 472-1666",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Thirsty's",
@@ -849,7 +837,7 @@
     "placeId": "ChIJtRiMr6e1RIYReKRz5XFXRJM",
     "phone": "(512) 649-1232",
     "website": "http://thirstys6thstreet.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Champions Austin Restaurant & Bar",
@@ -863,7 +851,7 @@
     "placeId": "ChIJz0VP7Ke1RIYRMCTWwLcB35Q",
     "phone": "(512) 691-9988",
     "website": "https://www.championsrestaurantatx.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Pour Choices",
@@ -877,7 +865,7 @@
     "placeId": "ChIJAQD8rae1RIYRQv0qGd71x74",
     "phone": null,
     "website": "http://www.pourchoicesaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Willow Country Bar",
@@ -891,7 +879,7 @@
     "placeId": "ChIJKaRM1w21RIYRBtxtFXO9iEM",
     "phone": "(512) 987-0860",
     "website": "http://soclutchgroup.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Woody's Bar",
@@ -905,7 +893,7 @@
     "placeId": "ChIJhdOc9f21RIYRI8h-E3mePek",
     "phone": "(512) 531-9062",
     "website": "https://www.woodys.bar/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Marfa Lights Bar",
@@ -919,7 +907,7 @@
     "placeId": "ChIJEwVb4621RIYRJFNgzCZmo0Q",
     "phone": "(512) 851-1871",
     "website": "https://www.marfalightsaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Codependent Cocktails + Coffee",
@@ -933,7 +921,7 @@
     "placeId": "ChIJQc2zzb21RIYRpx0AZEEweFg",
     "phone": "(512) 593-6999",
     "website": "https://www.codependentatx.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "The Jackalope",
@@ -947,7 +935,7 @@
     "placeId": "ChIJf9rTVKa1RIYRGWjMsGuTEZw",
     "phone": null,
     "website": "http://www.jackalopebar.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Library Bar",
@@ -961,7 +949,7 @@
     "placeId": "ChIJ8xkWrae1RIYRdPgdF12rsqk",
     "phone": "(512) 649-1232",
     "website": "http://thelibraryaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Green Light Social",
@@ -975,7 +963,7 @@
     "placeId": "ChIJ5ffk0A21RIYRIuqz892MnpM",
     "phone": "(512) 595-3885",
     "website": "http://www.greenlightsocial.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Kung Fu Saloon",
@@ -989,7 +977,7 @@
     "placeId": "ChIJoaqUgA61RIYRG9ZG4xWbe1w",
     "phone": "(512) 469-0901",
     "website": "http://www.kungfusaloon.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Burnside's Tavern",
@@ -1003,10 +991,10 @@
     "placeId": "ChIJX1Kq7HbPRIYRoGk3uKzCTog",
     "phone": "(512) 547-4161",
     "website": "https://www.burnsidestavern.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
-    "name": "Ca\u00f1a Rum Bar",
+    "name": "Caña Rum Bar",
     "address": "405 E 7th St, Austin, TX 78701",
     "latitude": 30.267664399999997,
     "longitude": -97.738661,
@@ -1017,7 +1005,7 @@
     "placeId": "ChIJteTVMn61RIYRl4XhXA3oPTo",
     "phone": null,
     "website": "http://canarumbaratx.com/",
-    "hours": "Closed \u00b7 Opens 6\u202fPM Thu"
+    "hours": "Closed · Opens 6 PM Thu"
   },
   {
     "name": "Touche",
@@ -1031,7 +1019,7 @@
     "placeId": "ChIJOeKrTaa1RIYRkIh7Jsmx1NY",
     "phone": "(512) 472-9841",
     "website": null,
-    "hours": "Opens soon \u00b7 9\u202fPM"
+    "hours": "Opens soon · 9 PM"
   },
   {
     "name": "Seven Grand",
@@ -1045,7 +1033,7 @@
     "placeId": "ChIJvYIs_6a1RIYRMcxe8rqXzNw",
     "phone": null,
     "website": "http://sevengrandaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Las Perlas",
@@ -1059,7 +1047,7 @@
     "placeId": "ChIJlYIs_6a1RIYR39hBxaq3BpY",
     "phone": null,
     "website": "http://lasperlasaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Pete's Dueling Piano Bar",
@@ -1073,7 +1061,7 @@
     "placeId": "ChIJewwXTqa1RIYRG6LyckTodqs",
     "phone": "(512) 472-7383",
     "website": "http://www.petesduelingpianobar.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Cheers Shot Bar",
@@ -1087,7 +1075,7 @@
     "placeId": "ChIJz4W0Vqa1RIYRYKLalQ7zBWU",
     "phone": "(512) 499-0093",
     "website": "https://www.cheersbaratx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Buckshot",
@@ -1101,7 +1089,7 @@
     "placeId": "ChIJj8m-UKa1RIYRmteNSrLww00",
     "phone": null,
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Lobbyist Bar and Lounge",
@@ -1129,7 +1117,7 @@
     "placeId": "ChIJFaJVsLS1RIYRcUZU0nlHQJ8",
     "phone": "(737) 787-6969",
     "website": "https://www.zanzibaratx.com/?utm_source=google&utm_medium=organic&utm_campaign=business_listing",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Coyote Ugly Saloon",
@@ -1143,7 +1131,7 @@
     "placeId": "ChIJRw_gRaa1RIYRZI9rnFfZXx0",
     "phone": "(512) 236-8459",
     "website": "http://www.coyoteuglysaloon.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Two Bucks",
@@ -1157,7 +1145,7 @@
     "placeId": "ChIJhdbSRaa1RIYR024ddPGUQl4",
     "phone": "(512) 825-6868",
     "website": "http://www.instagram.com/twobucksaustin",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Flamingo Cantina",
@@ -1171,7 +1159,7 @@
     "placeId": "ChIJCSj2Qaa1RIYRoEXZA7k_PRg",
     "phone": null,
     "website": "http://www.flamingocantina.com/",
-    "hours": "Opens soon \u00b7 9\u202fPM"
+    "hours": "Opens soon · 9 PM"
   },
   {
     "name": "Subterra Agave Bar",
@@ -1185,7 +1173,7 @@
     "placeId": "ChIJBxa77iW1RIYRjl6OtafC6Mg",
     "phone": "(512) 291-6846",
     "website": "https://www.emberatx.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Central District Brewing",
@@ -1199,7 +1187,7 @@
     "placeId": "ChIJGYM_kn61RIYRWFglP5e5CZI",
     "phone": "(512) 993-4511",
     "website": "http://centraldistrictbrewing.com/",
-    "hours": "Closed \u00b7 Opens 5:30\u202fPM Thu"
+    "hours": "Closed · Opens 5:30 PM Thu"
   },
   {
     "name": "Tiniest Bar In Texas",
@@ -1213,7 +1201,7 @@
     "placeId": "ChIJ3w9hCA61RIYR9YHUKzGeBpo",
     "phone": null,
     "website": null,
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Valhalla",
@@ -1227,7 +1215,7 @@
     "placeId": "ChIJiZbThaa1RIYR9i6Z6mJNSWM",
     "phone": null,
     "website": "http://www.facebook.com/valhallatavern",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Kinfolk Cocktail Lounge & Spirits Library",
@@ -1241,7 +1229,7 @@
     "placeId": "ChIJMRK96Au1RIYRXr3K0DG7Ypc",
     "phone": "(512) 236-9687",
     "website": "https://kinfolkaustin.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Elysium",
@@ -1255,7 +1243,7 @@
     "placeId": "ChIJsft0faa1RIYR5KAbLnxKYpI",
     "phone": null,
     "website": "http://www.elysiumonline.net/",
-    "hours": "Closed \u00b7 Opens 9:30\u202fPM"
+    "hours": "Closed · Opens 9:30 PM"
   },
   {
     "name": "Swan Dive",
@@ -1269,7 +1257,7 @@
     "placeId": "ChIJmf6f7Mq1RIYRIE8m0vqyxzY",
     "phone": null,
     "website": "http://swandiveaustin.com/",
-    "hours": "Closed \u00b7 Opens 10\u202fPM Thu"
+    "hours": "Closed · Opens 10 PM Thu"
   },
   {
     "name": "Bar 508 Mezcalerita",
@@ -1283,7 +1271,7 @@
     "placeId": "ChIJX2Kgm6a1RIYRVqxGD1vpKwk",
     "phone": "(512) 243-7874",
     "website": "http://www.bar508austin.com/",
-    "hours": "Closed \u00b7 Opens 5\u202fPM Fri"
+    "hours": "Closed · Opens 5 PM Fri"
   },
   {
     "name": "The 13th floor",
@@ -1297,7 +1285,7 @@
     "placeId": "ChIJQfN6fL-1RIYRPT-xUO1DM_w",
     "phone": null,
     "website": "https://the13thflooraustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Moonshine Grill",
@@ -1311,7 +1299,7 @@
     "placeId": "ChIJzTkDkai1RIYR9PpN5L6zHD0",
     "phone": "(512) 236-9599",
     "website": "http://www.moonshinegrill.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "the side bar",
@@ -1325,7 +1313,7 @@
     "placeId": "ChIJB7H7fqa1RIYRjygoCv51yso",
     "phone": "(512) 322-0697",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Cheer Up Charlies",
@@ -1339,7 +1327,7 @@
     "placeId": "ChIJmTEPp6a1RIYRdZeM-9KEckw",
     "phone": "(512) 431-2133",
     "website": "http://www.cheerupcharlies.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Mohawk Austin",
@@ -1353,7 +1341,7 @@
     "placeId": "ChIJ1aFZAqS1RIYRu5WiNjw8b0A",
     "phone": null,
     "website": "http://www.mohawkaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Marlow",
@@ -1367,7 +1355,7 @@
     "placeId": "ChIJD1x5H3C1RIYRRtu34CzMXUw",
     "phone": null,
     "website": "https://marlow.bar/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The Cloak Room",
@@ -1381,7 +1369,7 @@
     "placeId": "ChIJdZY9O-i1RIYRiTlorBzptfc",
     "phone": "(512) 478-2622",
     "website": "https://www.austintexas.org/listings/the-cloak-room/2762/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Mala Vida",
@@ -1395,7 +1383,7 @@
     "placeId": "ChIJ5bNEEQe1RIYRp5hkZIvt_Gk",
     "phone": "(512) 960-6472",
     "website": null,
-    "hours": "Closed \u00b7 Opens 9\u202fPM Thu"
+    "hours": "Closed · Opens 9 PM Thu"
   },
   {
     "name": "Electric Shuffle Austin",
@@ -1409,7 +1397,7 @@
     "placeId": "ChIJzbbxmGO1RIYRuZ6Zrc8aQuY",
     "phone": "(512) 894-8779",
     "website": "https://electricshuffle.com/us/austin",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Lustre Pearl Rainey",
@@ -1423,7 +1411,7 @@
     "placeId": "ChIJUz_DDam1RIYRm2VVEesZZp4",
     "phone": null,
     "website": "https://dunlapatx.com/lustre-pearl-rainey/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Brass Poppy",
@@ -1437,7 +1425,7 @@
     "placeId": "ChIJi34nGgC1RIYRFM8dY7_x6N0",
     "phone": "(512) 542-5300",
     "website": "https://www.hotelvanzandt.com/dine/brass-poppy/?utm_source=google-gbp&utm_medium=organic&utm_campaign=gbp",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "SoCo Bar & Bites",
@@ -1451,7 +1439,7 @@
     "placeId": "ChIJAQAQqwa1RIYRrBRNS8ue1N4",
     "phone": "(512) 469-9000",
     "website": "https://www.hilton.com/en/hotels/auslkes-embassy-suites-austin-downtown-south-congress/dining/?SEO_id=GMB--AUSLK&y_source=1_MTAwOTYyNTE3NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Anthem",
@@ -1465,7 +1453,7 @@
     "placeId": "ChIJH0IH5ai1RIYRH4MAJJpnw1A",
     "phone": "(512) 731-1411",
     "website": "http://eatdrinkanthem.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Clive",
@@ -1479,7 +1467,7 @@
     "placeId": "ChIJjazwc6m1RIYRBgKaR8VD_-0",
     "phone": null,
     "website": "https://dunlapatx.com/clive-bar/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Parlor Room",
@@ -1493,7 +1481,7 @@
     "placeId": "ChIJkYCEdqm1RIYROrwFIIeGXuE",
     "phone": "(512) 559-8800",
     "website": "http://parlorroomatx.com/",
-    "hours": "Closed \u00b7 Opens 5\u202fPM Thu"
+    "hours": "Closed · Opens 5 PM Thu"
   },
   {
     "name": "Bar Fino",
@@ -1507,7 +1495,18 @@
     "placeId": "ChIJi4-TXF-1RIYRYVER5rn7W-U",
     "phone": null,
     "website": "https://www.barfinoatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM",
+    "visited": true,
+    "visitDate": "2026-03-10",
+    "outcome": "lead",
+    "contact": "Vincent",
+    "contactRole": "Manager",
+    "notes": "Current bar too small. Building new bar next door (done April 2026). Vincent interested in placing machine there. Has Stella email + phone. Expecting call in April.",
+    "nextAction": "Follow up end of March",
+    "followUpDate": "2026-03-31",
+    "deadline": "2026-04-30",
+    "waitingOn": "them",
+    "leadStatus": "warm"
   },
   {
     "name": "The Drafting Room",
@@ -1521,7 +1520,7 @@
     "placeId": "ChIJkYCEdqm1RIYRUkrmaFu7TmA",
     "phone": null,
     "website": null,
-    "hours": "Closed \u00b7 Opens 10\u202fAM Thu"
+    "hours": "Closed · Opens 10 AM Thu"
   },
   {
     "name": "Augustine Cocktail Bar",
@@ -1535,7 +1534,7 @@
     "placeId": "ChIJIy_vMn21RIYRxkIBTFL1Fxw",
     "phone": "(512) 910-2100",
     "website": "http://augustineaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Little Brother",
@@ -1549,7 +1548,7 @@
     "placeId": "ChIJFWNES-m1RIYRtblqr_5ajRY",
     "phone": "(512) 305-3133",
     "website": "https://www.littlebrotherbar.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Crazy Conchaz",
@@ -1563,7 +1562,7 @@
     "placeId": "ChIJWzofaOG1RIYRs_owfozksww",
     "phone": "(855) 272-9987",
     "website": "https://crazyconchaz.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Victory Lap Rainey",
@@ -1577,7 +1576,7 @@
     "placeId": "ChIJhdPZdRS1RIYRSR4pKcIYoFU",
     "phone": "(737) 600-3733",
     "website": "https://victorylapbar.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Bungalow",
@@ -1591,7 +1590,7 @@
     "placeId": "ChIJNd2REqm1RIYRa8mNeXVAICQ",
     "phone": "(512) 489-4440",
     "website": "https://www.bungalowaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Rainey House",
@@ -1605,7 +1604,7 @@
     "placeId": "ChIJx105dd61RIYRAw2hFfe-ji0",
     "phone": "(512) 418-6128",
     "website": "http://rainey-house.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Tavern",
@@ -1619,7 +1618,7 @@
     "placeId": "ChIJ2zs563K1RIYRjjycoAPyT1E",
     "phone": "(512) 320-8377",
     "website": "http://www.tavernaustin.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Bar Hacienda",
@@ -1633,7 +1632,7 @@
     "placeId": "ChIJeSp679u1RIYRB-HMQrVvwTo",
     "phone": "(737) 262-2800",
     "website": "https://www.barhacienda.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Banger's Sausage House & Beer Garden",
@@ -1647,7 +1646,7 @@
     "placeId": "ChIJ20zQ16u1RIYRHXxs8v4BacY",
     "phone": "(512) 386-1656",
     "website": "http://www.bangersaustin.com/",
-    "hours": "Closed \u00b7 Opens 11\u202fAM Thu"
+    "hours": "Closed · Opens 11 AM Thu"
   },
   {
     "name": "Cantina 512",
@@ -1661,7 +1660,7 @@
     "placeId": "ChIJH7nj6IK1RIYRYipBpS0NQqg",
     "phone": "(512) 829-7070",
     "website": "http://cantina512.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Half Step",
@@ -1675,7 +1674,7 @@
     "placeId": "ChIJx7Hw9qq1RIYR-Wd-iTGDcU4",
     "phone": "(512) 672-8698",
     "website": "http://halfstepbar.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Lucille Patio Lounge",
@@ -1689,7 +1688,7 @@
     "placeId": "ChIJUUPE1au1RIYRNr9jXMHCPIo",
     "phone": null,
     "website": "https://lucilleaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The Stay Put",
@@ -1703,7 +1702,7 @@
     "placeId": "ChIJ0R3w3qq1RIYRJM0-nmntaIU",
     "phone": null,
     "website": "http://stayputatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Howards Bar & Club",
@@ -1717,7 +1716,7 @@
     "placeId": "ChIJF7F80ki1RIYR0M2UTnuhq0w",
     "phone": "(512) 677-7167",
     "website": "https://howardsaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Limestone Rooftop",
@@ -1731,7 +1730,7 @@
     "placeId": "ChIJHyw8c7C1RIYRqbwCbNXOwm8",
     "phone": "(512) 200-4142",
     "website": "https://limestoneaustin.com/",
-    "hours": "Closed \u00b7 Opens 5\u202fPM Thu"
+    "hours": "Closed · Opens 5 PM Thu"
   },
   {
     "name": "Emmer & Rye",
@@ -1745,7 +1744,7 @@
     "placeId": "ChIJPWOnS6q1RIYRDOnUe3r5FPs",
     "phone": "(512) 366-5530",
     "website": "http://www.emmerandrye.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Ego's",
@@ -1759,7 +1758,7 @@
     "placeId": "ChIJrRB10AO1RIYRy_GI6iLy854",
     "phone": "(512) 474-7091",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Shangri-La",
@@ -1773,7 +1772,7 @@
     "placeId": "ChIJwc9096-1RIYRIEXZT4wwdNk",
     "phone": "(512) 524-4291",
     "website": "http://shangrilaaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Dive Bar Austin",
@@ -1787,7 +1786,7 @@
     "placeId": "ChIJI8PZjXW1RIYRjmyX7kkdbas",
     "phone": "(512) 686-8325",
     "website": "https://divebaraustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Violet Crown Social Club",
@@ -1801,7 +1800,7 @@
     "placeId": "ChIJiSURHbC1RIYROqYkjckCVAs",
     "phone": "(512) 614-4461",
     "website": "http://violetcrownsocialclub.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Uptown",
@@ -1815,7 +1814,7 @@
     "placeId": "ChIJYU6LYda1RIYRmqEpTOaw5XQ",
     "phone": "(512) 551-2013",
     "website": "https://www.uptown-austin.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Bar Mischief",
@@ -1829,7 +1828,7 @@
     "placeId": "ChIJAxuz1Ri1RIYR-L-cIHV45Ec",
     "phone": null,
     "website": "https://www.inncahoots.com/public-bars/bar-mischief",
-    "hours": "Closed \u00b7 Opens 6\u202fPM Thu"
+    "hours": "Closed · Opens 6 PM Thu"
   },
   {
     "name": "The Lucky Duck",
@@ -1843,7 +1842,7 @@
     "placeId": "ChIJP-pXhlS1RIYRsA12mbXywQ8",
     "phone": "(512) 537-1519",
     "website": "https://www.luckyducktx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Bar Peached",
@@ -1857,7 +1856,7 @@
     "placeId": "ChIJiZBlOw21RIYR249gi0KSuHg",
     "phone": "(512) 992-0666",
     "website": "http://www.barpeached.com/",
-    "hours": "Closes soon \u00b7 9\u202fPM \u00b7 Opens 5\u202fPM Thu"
+    "hours": "Closes soon · 9 PM · Opens 5 PM Thu"
   },
   {
     "name": "Nickel City",
@@ -1871,7 +1870,7 @@
     "placeId": "ChIJETpRB7u1RIYRDwQmAJdd-Wc",
     "phone": null,
     "website": "http://www.nickelcitybar.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Aba Austin",
@@ -1885,7 +1884,7 @@
     "placeId": "ChIJDfhk1ja1RIYR3NIISvjn88k",
     "phone": "(737) 273-0199",
     "website": "https://www.abarestaurants.com/austin/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Soho House Austin",
@@ -1913,7 +1912,7 @@
     "placeId": "ChIJUyhv87C1RIYRWred_z5PwqE",
     "phone": "(512) 322-5223",
     "website": "http://www.revelryatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Equipment Room",
@@ -1927,7 +1926,7 @@
     "placeId": "ChIJMaJ0B3W1RIYRJzQI9f6yBIg",
     "phone": "(512) 520-5890",
     "website": "https://equipmentroom.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Mother's Ruin",
@@ -1941,7 +1940,7 @@
     "placeId": "ChIJ1975DHG1RIYRIxaYy7UTEVw",
     "phone": null,
     "website": "https://mothersruinaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Low Down Lounge",
@@ -1955,7 +1954,7 @@
     "placeId": "ChIJY071h1q1RIYRVUwynCGTJFw",
     "phone": null,
     "website": "http://lowdownlounge.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Seven Spirits",
@@ -1969,7 +1968,7 @@
     "placeId": "ChIJ_9hfBlq1RIYRxA2M9ARwrY8",
     "phone": null,
     "website": "http://www.sevenspiritsaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The Volstead Lounge",
@@ -1983,7 +1982,7 @@
     "placeId": "ChIJ85Q77rC1RIYRr5_R_urUGbQ",
     "phone": null,
     "website": "http://volsteadlounge.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The White Horse",
@@ -1997,7 +1996,7 @@
     "placeId": "ChIJ279pHrG1RIYRicks_tZPpjs",
     "phone": "(512) 553-6756",
     "website": "http://thewhitehorseaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Donn's Depot",
@@ -2011,10 +2010,10 @@
     "placeId": "ChIJGWlp_T-1RIYRdeyIEts-Neg",
     "phone": "(512) 478-0336",
     "website": "http://donnsdepot.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
-    "name": "Jo's Coffee \u2013 South Congress",
+    "name": "Jo's Coffee – South Congress",
     "address": "1300 S Congress Ave, Austin, TX 78704",
     "latitude": 30.2510458,
     "longitude": -97.7493717,
@@ -2025,7 +2024,7 @@
     "placeId": "ChIJ1S_Bov20RIYRe7MiR8tYawY",
     "phone": "(512) 852-2300",
     "website": "https://www.joscoffee.com/south-congress-jos",
-    "hours": "Closed \u00b7 Opens 7\u202fAM Thu"
+    "hours": "Closed · Opens 7 AM Thu"
   },
   {
     "name": "Lucky Robot Restaurant",
@@ -2039,7 +2038,7 @@
     "placeId": "ChIJT-5pvP20RIYRomVuik28HBI",
     "phone": "(512) 444-8081",
     "website": "https://luckyrobotatx.com/?utm_source=google",
-    "hours": "Closes soon \u00b7 9:30\u202fPM \u00b7 Opens 4:30\u202fPM Thu"
+    "hours": "Closes soon · 9:30 PM · Opens 4:30 PM Thu"
   },
   {
     "name": "The Continental Club",
@@ -2053,7 +2052,7 @@
     "placeId": "ChIJJUbJuv20RIYRpFyFb-IiSZo",
     "phone": "(512) 441-2444",
     "website": "https://continentalclub.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Liberty",
@@ -2067,7 +2066,7 @@
     "placeId": "ChIJ01xUKre1RIYRM_3DzIyLPT0",
     "phone": "(512) 514-0502",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "White Tiger",
@@ -2081,7 +2080,7 @@
     "placeId": "ChIJWyzDNbe1RIYRQYsW6rGnggM",
     "phone": "(512) 893-7493",
     "website": null,
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "Mean Eyed Cat",
@@ -2095,7 +2094,7 @@
     "placeId": "ChIJXf5VdUC1RIYRFRyCTCRvTZw",
     "phone": "(512) 920-6645",
     "website": "https://themeaneyedcat.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Perla's",
@@ -2109,7 +2108,7 @@
     "placeId": "ChIJb7byD_20RIYRT9uoSeSUvzY",
     "phone": "(512) 291-7300",
     "website": "http://perlasaustin.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "The Grackle",
@@ -2123,7 +2122,7 @@
     "placeId": "ChIJCbP3REC1RIYRF-nYLda5TZQ",
     "phone": "(512) 520-8148",
     "website": "https://www.facebook.com/thegrackleaustin/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Hopdoddy Burger Bar",
@@ -2137,10 +2136,10 @@
     "placeId": "ChIJK7_q__y0RIYRA9j-Q5KFOP0",
     "phone": "(512) 243-7505",
     "website": "https://www.hopdoddy.com/locations/southcongress",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
-    "name": "Whisler\u2019s",
+    "name": "Whisler’s",
     "address": "1816 E 6th St, Austin, TX 78702",
     "latitude": 30.2619325,
     "longitude": -97.72273799999999,
@@ -2151,7 +2150,7 @@
     "placeId": "ChIJ1wVp97a1RIYR6eeMLojxHYo",
     "phone": "(512) 480-0781",
     "website": "http://whislersatx.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Maie Day",
@@ -2165,7 +2164,7 @@
     "placeId": "ChIJEU9CXNq1RIYRWTv3dLfnxPU",
     "phone": "(512) 524-2235",
     "website": "https://www.maieday.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "OTOKO",
@@ -2179,7 +2178,7 @@
     "placeId": "ChIJke_4iPy0RIYRVz6Ttf70Y78",
     "phone": "(512) 994-0428",
     "website": "https://otokoaustin.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "watertrade",
@@ -2193,7 +2192,7 @@
     "placeId": "ChIJCWV28GG1RIYRgQVJ_g48VJ0",
     "phone": "(512) 994-0428",
     "website": "http://otokoaustin.com/watertrade",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "South Congress Hotel Lobby Bar",
@@ -2207,7 +2206,7 @@
     "placeId": "ChIJ6bmftUm1RIYRDYZi3BzhLjQ",
     "phone": "(512) 920-6405",
     "website": "https://southcongresshotel.com/eat-drink",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Drinks Lounge",
@@ -2221,7 +2220,7 @@
     "placeId": "ChIJ84hf-rS1RIYRyN7KuJPZfT4",
     "phone": null,
     "website": "http://drinkslounge.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "June's",
@@ -2235,7 +2234,7 @@
     "placeId": "ChIJUx3pXfu0RIYRHYxsf5OVPMw",
     "phone": "(512) 416-1722",
     "website": "http://junesallday.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Magnolia Cafe",
@@ -2249,7 +2248,7 @@
     "placeId": "ChIJf4kFMPu0RIYR96Fyje5TjLs",
     "phone": "(512) 445-0000",
     "website": "http://magnoliacafeaustin.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "C-Boy's Heart & Soul",
@@ -2263,7 +2262,7 @@
     "placeId": "ChIJyZBe1vq0RIYRBwmkhz2GlBw",
     "phone": "(512) 215-0023",
     "website": "https://cboys.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Meteor",
@@ -2277,7 +2276,7 @@
     "placeId": "ChIJE4Yi5uq1RIYRm3kS_XO8LNo",
     "phone": "(512) 351-9541",
     "website": "https://espressochampagnechainlube.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Corner Bar",
@@ -2291,7 +2290,7 @@
     "placeId": "ChIJc8VGEN-0RIYR_47qj-CsoQw",
     "phone": "(512) 445-9500",
     "website": "http://cornerbaraustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Golden Goose",
@@ -2305,7 +2304,7 @@
     "placeId": "ChIJoTus1Ni0RIYRsob2Q2tY5hc",
     "phone": "(512) 362-8683",
     "website": "http://www.thegooseaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Bouldin Acres",
@@ -2319,7 +2318,7 @@
     "placeId": "ChIJAysW9qe1RIYRnKIB5zCoa2E",
     "phone": "(512) 536-0132",
     "website": "http://bouldinacres.com/",
-    "hours": "Open \u00b7 Closes 11\u202fPM"
+    "hours": "Open · Closes 11 PM"
   },
   {
     "name": "Walter's Tavern",
@@ -2333,7 +2332,7 @@
     "placeId": "ChIJb8Ph4Ya1RIYRvsNBNAKQhEY",
     "phone": "(512) 599-4069",
     "website": "https://www.walterstavernatx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   },
   {
     "name": "The Austin Beer Garden Brewing Co.",
@@ -2347,7 +2346,7 @@
     "placeId": "ChIJs6-KANy0RIYRRTcMhnhoFaE",
     "phone": "(512) 298-2242",
     "website": "http://theabgb.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "Simona's Coffee + Cocktails",
@@ -2361,7 +2360,7 @@
     "placeId": "ChIJy1qscIi1RIYR_QWMX1qsnnk",
     "phone": "(512) 220-1795 ext. 507",
     "website": "http://www.coltonhousehotel.com/",
-    "hours": "Open \u00b7 Closes 10\u202fPM"
+    "hours": "Open · Closes 10 PM"
   },
   {
     "name": "The Wheel South",
@@ -2375,7 +2374,7 @@
     "placeId": "ChIJ2ai_BQC1RIYRgfPjaD2D_Sw",
     "phone": "(512) 763-0391",
     "website": "https://thewheelsouth.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Little Drinks Lounge",
@@ -2389,7 +2388,7 @@
     "placeId": "ChIJmbJys8m1RIYR6XpYTNHXmqk",
     "phone": null,
     "website": "http://littledrinkslounge.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The 04 Lounge",
@@ -2403,7 +2402,7 @@
     "placeId": "ChIJFRl6m5W0RIYRtoxCMKCSwpk",
     "phone": "(512) 444-7788",
     "website": null,
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "Bender",
@@ -2417,7 +2416,7 @@
     "placeId": "ChIJr_7nl760RIYRfYIKToVECn8",
     "phone": "(512) 447-1800",
     "website": "http://www.benderbar.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "The Skeleton Key",
@@ -2431,7 +2430,7 @@
     "placeId": "ChIJRcFjJwC1RIYRjZZtdVO_LUQ",
     "phone": null,
     "website": "https://skeletonkeyaustin.com/",
-    "hours": "Open \u00b7 Closes 2\u202fAM"
+    "hours": "Open · Closes 2 AM"
   },
   {
     "name": "FORTUNE TELLER",
@@ -2445,6 +2444,6 @@
     "placeId": "ChIJv-HbdqSzRIYR9zErv-2lLhk",
     "phone": null,
     "website": "https://www.fortunetelleratx.com/",
-    "hours": "Open \u00b7 Closes 12\u202fAM"
+    "hours": "Open · Closes 12 AM"
   }
 ]
