@@ -1534,7 +1534,15 @@
     "placeId": "ChIJIy_vMn21RIYRxkIBTFL1Fxw",
     "phone": "(512) 910-2100",
     "website": "http://augustineaustin.com/",
-    "hours": "Open · Closes 2 AM"
+    "hours": "Open · Closes 2 AM",
+    "visited": true,
+    "visitDate": "2026-03-10",
+    "outcome": "lead",
+    "contact": "Julio",
+    "notes": "Has business card with contact info. Needs email follow-up with full fragrance vending details so he can present to his boss.",
+    "nextAction": "Email Julio with info packet",
+    "leadStatus": "pending",
+    "waitingOn": "me"
   },
   {
     "name": "Little Brother",
@@ -1576,7 +1584,16 @@
     "placeId": "ChIJhdPZdRS1RIYRSR4pKcIYoFU",
     "phone": "(737) 600-3733",
     "website": "https://victorylapbar.com/",
-    "hours": "Open · Closes 12 AM"
+    "hours": "Open · Closes 12 AM",
+    "visited": true,
+    "visitDate": "2026-03-10",
+    "outcome": "lead",
+    "contact": "Alissa",
+    "contactRole": "General Manager",
+    "notes": "Bartender was friendly and receptive to fragrance vending idea. Contact info for GM (Alissa) airdropped to phone.",
+    "nextAction": "Contact Alissa with proposal",
+    "leadStatus": "warm",
+    "waitingOn": "me"
   },
   {
     "name": "Bungalow",
@@ -1646,7 +1663,17 @@
     "placeId": "ChIJ20zQ16u1RIYRHXxs8v4BacY",
     "phone": "(512) 386-1656",
     "website": "http://www.bangersaustin.com/",
-    "hours": "Closed · Opens 11 AM Thu"
+    "hours": "Closed · Opens 11 AM Thu",
+    "visited": true,
+    "visitDate": "2026-03-10",
+    "outcome": "lead",
+    "contact": "Steve",
+    "contactRole": "General Manager",
+    "contactEmail": "steve@bangersaustin.com",
+    "notes": "Spoke to China. Has business card. Email Steve (GM) at steve@bangersaustin.com with fragrance vending machine information.",
+    "nextAction": "Email Steve with proposal",
+    "leadStatus": "pending",
+    "waitingOn": "me"
   },
   {
     "name": "Cantina 512",
@@ -1688,7 +1715,11 @@
     "placeId": "ChIJUUPE1au1RIYRNr9jXMHCPIo",
     "phone": null,
     "website": "https://lucilleaustin.com/",
-    "hours": "Open · Closes 12 AM"
+    "hours": "Open · Closes 12 AM",
+    "visited": true,
+    "visitDate": "2026-03-10",
+    "outcome": "not interested",
+    "notes": "Rejected - too impersonal for their vibe."
   },
   {
     "name": "The Stay Put",
