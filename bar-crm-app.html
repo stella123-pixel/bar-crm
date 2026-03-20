@@ -1177,8 +1177,21 @@ No cost, no commitment – if it doesn't work, I'll remove it.`;
         // Update stats
         function updateStats() {
             document.getElementById('total-bars').textContent = bars.length;
-            document.getElementById('visited-count').textContent = bars.filter(b => b.crm?.dateVisited).length;
-            document.getElementById('leads-count').textContent = bars.filter(b => b.crm?.quickOutcome === 'lead').length;
+            
+            // Check both nested crm structure and top-level fields
+            const visitedCount = bars.filter(b => 
+                b.crm?.dateVisited || b.visitDate || b.visited
+            ).length;
+            document.getElementById('visited-count').textContent = visitedCount;
+            
+            // Check both nested and top-level outcome/leadStatus
+            const leadsCount = bars.filter(b => 
+                b.crm?.quickOutcome === 'lead' || 
+                b.outcome === 'lead' || 
+                b.leadStatus === 'warm' || 
+                b.leadStatus === 'pending'
+            ).length;
+            document.getElementById('leads-count').textContent = leadsCount;
         }
         
         // Filter buttons
